@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build-backend:
@@ -25,7 +22,7 @@ jobs:
         run: |
           cd backend
           npm install
-          # Om du vill kontrollera att servern kan starta utan att blockera:
+          # Om du vill verifiera att backenden startar utan att blockera:
           # npm start & sleep 5 && kill $!
 
   build-frontend:
