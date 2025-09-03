@@ -26,10 +26,10 @@ jobs:
           cd backend
           npm install
 
-      - name: Build backend
+      - name: Start backend (optional)
         run: |
           cd backend
-          npm run build  # Om du har ett build-kommando
+          npm start  # Om du vill köra servern, annars kan du ta bort detta
 
   build-frontend:
     runs-on: ubuntu-latest
